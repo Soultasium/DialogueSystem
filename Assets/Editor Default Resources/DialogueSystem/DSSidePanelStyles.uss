@@ -1,0 +1,119 @@
+/* VISUAL ELEMENTS */
+
+/*Button*/
+/*{*/
+/*    */
+/*}*/
+
+.ds-toolbar__main-container
+{
+    /*position: absolute;*/
+    flex-shrink: var(--ds-metrics-window-pixels-0);
+    
+    top: var(--ds-metrics-window-pixels-0);
+    left: var(--ds-metrics-window-pixels-0);
+    bottom: var(--ds-metrics-window-pixels-0);
+    width: var(--ds-metrics-window-pixels-400);
+    
+    background-color: var(--ds-colors-window-dark-gray-1);
+    border-top-left-radius: var(--ds-metrics-window-pixels-8);
+    border-bottom-right-radius: var(--ds-metrics-window-pixels-8);
+    padding-top: var(--ds-metrics-window-pixels-0);
+    padding-left: var(--ds-metrics-window-pixels-0);
+    padding-right: var(--ds-metrics-window-pixels-4);
+    overflow: hidden;
+}
+
+.ds-toolbar__resize-handle 
+{
+    width: var(--ds-metrics-window-pixels-4);
+    height: 100%;
+    position: absolute;
+    top: var(--ds-metrics-window-pixels-0);
+    right: var(--ds-metrics-window-pixels-0);
+    bottom: var(--ds-metrics-window-pixels-0);
+    background-color: var(--ds-colors-grid-light-gray-1);
+}
+
+.ds-toolbar__resize-handle:hover
+{
+    background-color: var(--ds-colors-grid-light-gray-3);
+}
+
+.ds-toolbar__resize-handle.ds-toolbar__resize-handle--dragging:hover
+{
+    background-color: var(--ds-colors-grid-light-gray-4);
+}
+
+.ds-toolbar__grid-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ds-toolbar__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ds-toolbar__scroll-view .unity-scroller--vertical .unity-base-slider__dragger {
+    background-color: var(--ds-colors-window-dark-gray-5);
+    border-color: var(--ds-colors-window-dark-gray-1);
+}
+
+.ds-toolbar__scroll-view .unity-scroller--vertical .unity-base-slider__dragger:hover {
+    background-color: var(--ds-colors-window-dark-gray-5);
+    border-color: var(--ds-colors-grid-light-gray-3);
+}
+
+Button
+{
+    background-color: var(--ds-colors-window-dark-gray-5);
+    border-color: var(--ds-colors-window-dark-gray-1);
+}
+
+Button:hover
+{
+ background-color: var(--ds-colors-window-dark-gray-2);
+}
+
+Button:active
+{
+    background-color: var(--ds-colors-window-dark-gray-3);
+    color: var(--ds-colors-window-yellow);
+}
+
+.ds-toolbar__button 
+{
+    white-space: normal;
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    -unity-text-align: middle-center;
+}
+
+.ds-toolbar__button-add
+{
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.ds_toolbar__toggle-button
+{
+    position: absolute;
+    top: var(--ds-metrics-window-pixels-1);
+    right: var(--ds-metrics-window-pixels-4);
+    width: var(--ds-metrics-window-pixels-30);
+    height: var(--ds-metrics-window-pixels-25);
+    -unity-text-align: middle-center;
+}
+
+.unity-text-field > .unity-label
+{
+    margin-right: var(--ds-metrics-window-pixels-10);
+    min-width: var(--ds-metrics-window-pixels-0);
+}
